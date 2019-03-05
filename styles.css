@@ -1,0 +1,122 @@
+body {
+  font-family: 'Roboto';
+  background-color: #85a5d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#tariffs-block {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 0px 7px 20px 0px #44444485;
+  padding: 40px;
+  margin: 40px;
+  justify-content: center;
+  max-width: 800px;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.tarif {
+  text-align: center;
+  width: 220px;
+  padding: 20px;
+}
+#tariffs-block .tarif:hover {
+  background: #efefef;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tarif img {
+  width: 65px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.tarif .description {
+  color: #868686;
+  font-size: 14px;
+  line-height: 22px;
+}
+.tarif .name {
+  color: #516cd4;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.tarif .price {
+  color: #516cd4;
+  margin-top: 20px;
+}
+.price .value {
+  font-weight: bold;
+  font-size: 32px;
+}
+sup.currency {
+  top: -0.5em;
+  position: relative;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.tarffs-bottom {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.tarif-button {
+  background-color: #3c75f7;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-family: 'Roboto';
+}
+
+.modal {
+  display: none;  
+  position: fixed;  
+  z-index: 99999;  
+  left: 0;
+  top: 0;
+  width: 100%;  
+  height: 100%;    
+  background-color: rgba(0,0,0,0.4); 
+}
+  
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 0 20px 30px 20px;
+  border: 1px solid #888;
+  max-width: 400px; 
+  border-radius: 5px;
+}
+.modal-header h3 {
+  text-align: center;
+}
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.tarif-modal .tarif {
+  width: auto !important;
+} 
+
+.close {
+  float: right;
+  width: 15px; 
+}
+.close:hover { 
+  cursor: pointer;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal Popup</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="modal.js"></script>
+</head>
+<body>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="img/cross.svg" class="close">
+        <h3>Confirmation</h3>
+      </div>
+      <div class="tarif-modal"></div>
+      <div class="modal-footer">
+        <button class="tarif-button">Confirm and pay</button>
+      </div>
+    </div>
+  </div> 
+
+  <div id="tariffs-block">
+    <div class="tarif">
+      <img src="img/device.svg">
+      <h2 class="name">Mobile</h2>
+      <div class="description">Get notifications about new releases in our mobile app.</div>
+      <div class="price">
+        <sup class="currency">$</sup>
+        <span class="value">10</span>
+        /
+        <span class="period">month</span>
+      </div>
+    </div>
+    <div class="tarif">
+      <img src="img/laptop.svg">
+      <h2 class="name">Desktop</h2>
+      <div class="description">Enjoy new episodes on your laptop in browser with our web service, which supports all the platforms.</div>
+      <div class="price">
+        <sup class="currency">$</sup>
+        <span class="value">15</span>
+        /
+        <span class="period">month</span>
+      </div>
+    </div>
+    <div class="tarif">
+      <img src="img/monitor.svg">
+      <h2 class="name">TV</h2>
+      <div class="description">Watch your favorite series at home on large screen with our TV application.</div>
+      <div class="price">
+        <sup class="currency">$</sup>
+        <span class="value">20</span>
+        /
+        <span class="period">month</span>
+      </div>
+    </div>
+    <div class="tarffs-bottom">
+      <button class="tarif-button">Give feedback</button> 
+    </div>
+  </div>
+</body>
+</html>
